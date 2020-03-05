@@ -1,0 +1,83 @@
+﻿@model HRApplication.Models.HumanResource
+
+@{
+    ViewData["Title"] = "Resource Details";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Resource Information</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h4>Registration of new Human Resource</h4>
+        <p class="lead">Details of <b>@Model.ResourceName</b></p>
+    </div>
+    <div class="card shadow-lg">
+        <div class="card-header">
+            Resource Information
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    Name
+                </div>
+                <div class="col-sm-8">
+                    @Model.ResourceName
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Age
+                </div>
+                <div class="col-sm-8">
+                    @Model.Age
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Department
+                </div>
+                <div class="col-sm-8">
+                    @Model.Department
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Position
+                </div>
+                <div class="col-sm-8">
+                    @Model.Position
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Joining Date
+                </div>
+                <div class="col-sm-8">
+                    @Model.JoiningDate
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Gender
+                </div>
+                <div class="col-sm-8">
+                    @Model.Gender
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    Highest Qualification
+                </div>
+                <div class="col-sm-8">
+                    @Model.HighestQualifications
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
